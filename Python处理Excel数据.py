@@ -11,6 +11,7 @@ df = xlrd.open_workbook('x.xlsx')
 import  pandas as pd
 df = pd.read_excel('x.xlsx')
 df = pd.read_csv('x.csv')
+df = pd.read_table("x.txt")
 
 显示数据
     显示数据的行与列数
