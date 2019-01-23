@@ -11,7 +11,6 @@ from opencv import highgui
 from opencv import cv
 import time
 
-
 MPEG1VIDEO = 0x314D4950
 camera = highgui.cvCreateCameraCapture(0)#找摄像头，一般填0-99都可以
 
@@ -136,7 +135,7 @@ class Timer(QThread):
             self.stoped = True
         
     def isStoped(self):    
-        with QMutexLocker(sellf.mutex):
+        with QMutexLocker(self.mutex):
             return self.stoped
  
 if __name__ == "__main__" :
