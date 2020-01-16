@@ -17,6 +17,8 @@ def loadFileInformation(filename):
     print (dir(ds))
     print (type(information))
     return information
+
+if __name__ == "__main__":
 path = "E:\\image\\xxx.dcm"
 a=loadFileInformation(path)
 print (a)
